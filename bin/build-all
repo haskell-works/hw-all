@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+build_in() {
+  pushd $1 > /dev/null
+  ./mafia > /dev/null 2> /dev/null
+  cabal update
+  ./mafia build
+  popd
+}
+
+for _cabal in */*.cabal; do
+  _path=$(dirname $_cabal)
+  _package_name=$(basename ${_cabal%.cabal})
+  echo =================== $_package_name ======================
+  build_in $_path
+done

@@ -1,0 +1,30 @@
+dependencies:
+  cache_directories:
+    - "~/.cabal"
+    - "~/.stack"
+  pre:
+    - wget -qO- https://get.haskellstack.org/ | sh
+    - cp ./scripts/* ~/bin/
+  override:
+    - fetch
+    - stack init --resolver lts-7.2
+    - stack build
+
+test:
+  override:
+    - stack test
+
+deployment:
+  release_branch:
+    owner: haskell-works
+    branch: /.*-branch/
+    commands:
+      - when tag autotag
+
+  hackage:
+    owner: haskell-works
+    tag: /v.*/
+    commands:
+      - ./scripts/setup-cred
+      - stack sdist
+      - stack upload .

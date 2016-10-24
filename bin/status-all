@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+for _cabal in */*.cabal; do
+  _path=$(dirname $_cabal)
+  _package_name=$(basename ${_cabal%.cabal})
+  echo =================== $_package_name ======================
+  pushd $_path > /dev/null
+  git status
+  popd
+done

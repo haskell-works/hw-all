@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+for _cabal in */*.cabal; do
+  _path=$(dirname $_cabal)
+  _package_name=$(basename ${_cabal%.cabal})
+  echo == $_path $_package_name ==
+  cat $_cabal | grep hw- | grep -v "$_package_name" | sed 's/[ ,]//g' | sed 's|^|../|g' | sort | uniq > $_path/$_package_name.submodules
+done

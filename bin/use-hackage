@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+for _cabal in */*.cabal; do
+  _path=$(dirname $_cabal)
+  _package_name=$(basename ${_cabal%.cabal})
+  _submodule="$_path/$_package_name.submodules"
+  [ -f "$_submodule" ] && rm "$_submodule"
+done
