@@ -8,7 +8,7 @@ dependencies:
   override:
     - fetch
     - stack init --resolver lts-7.2
-    - stack build
+    - stack build --only-dependencies
 
 test:
   override:
@@ -25,6 +25,4 @@ deployment:
     owner: haskell-works
     tag: /v.*/
     commands:
-      - ./scripts/setup-cred
-      - stack sdist
-      - stack upload .
+      - publish
