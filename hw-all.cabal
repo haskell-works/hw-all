@@ -34,7 +34,6 @@ library
                       , hw-int
                       , hw-json
                       , hw-json-lens
-                      , hw-json-mquery
                       , hw-mquery
                       , hw-parser
                       , hw-prim

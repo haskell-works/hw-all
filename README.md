@@ -1,4 +1,5 @@
 # hw-all
+[![CircleCI](https://circleci.com/gh/haskell-works/hw-all.svg?style=svg)](https://circleci.com/gh/haskell-works/hw-all)
 
 * hw-balancedparens
   [![CircleCI](https://circleci.com/gh/haskell-works/hw-balancedparens/tree/0-branch.svg?style=svg)](https://circleci.com/gh/haskell-works/hw-balancedparens/tree/0-branch)
@@ -18,8 +19,6 @@
   [![CircleCI](https://circleci.com/gh/haskell-works/hw-json/tree/0-branch.svg?style=svg)](https://circleci.com/gh/haskell-works/hw-json/tree/0-branch)
 * hw-json-lens
   [![CircleCI](https://circleci.com/gh/haskell-works/hw-json-lens/tree/0-branch.svg?style=svg)](https://circleci.com/gh/haskell-works/hw-json-lens/tree/0-branch)
-* hw-json-mquery
-  [![CircleCI](https://circleci.com/gh/haskell-works/hw-json-mquery/tree/0-branch.svg?style=svg)](https://circleci.com/gh/haskell-works/hw-json-mquery/tree/0-branch)
 * hw-mquery
   [![CircleCI](https://circleci.com/gh/haskell-works/hw-mquery/tree/0-branch.svg?style=svg)](https://circleci.com/gh/haskell-works/hw-mquery/tree/0-branch)
 * hw-parser
