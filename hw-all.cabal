@@ -35,6 +35,7 @@ library
                       , hw-json
                       , hw-json-lens
                       , hw-mquery
+                      , hw-packed-vector
                       , hw-parser
                       , hw-prim
                       , hw-rankselect
