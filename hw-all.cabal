@@ -9,9 +9,9 @@ license:                BSD-3-Clause
 license-file:           LICENSE
 author:                 John Ky
 maintainer:             newhoggy@gmail.com
-copyright:              2016-2019 John Ky
+copyright:              2016-2020 John Ky
 category:               Data, Conduit
-tested-with:            GHC == 8.8.3, GHC == 8.6.5, GHC == 8.4.4, GHC == 8.2.2
+tested-with:            GHC == 8.8.3, GHC == 8.6.5, GHC == 8.4.4
 build-type:             Simple
 extra-source-files:     README.md
 
@@ -19,41 +19,41 @@ source-repository head
   type:     git
   location: https://github.com/haskell-works/hw-all
 
-common base                     { build-depends: base                     >= 4.8        && < 5      }
+common base                       { build-depends: base                       >= 4.11       && < 5      }
 
-common bits-extra               { build-depends: bits-extra               >= 0.0.1.4    && < 0.1    }
-common hw-aeson                 { build-depends: hw-aeson                 >= 0.1.0.2    && < 0.2    }
-common hw-balancedparens        { build-depends: hw-balancedparens        >= 0.3.0.2    && < 0.4    }
-common hw-bits                  { build-depends: hw-bits                  >= 0.7.0.8    && < 0.8    }
-common hw-conduit               { build-depends: hw-conduit               >= 0.2.0.6    && < 0.3    }
-common hw-diagnostics           { build-depends: hw-diagnostics           >= 0.0.0.7    && < 0.1    }
-common hw-dsv                   { build-depends: hw-dsv                   >= 0.3.7      && < 0.4    }
-common hw-dump                  { build-depends: hw-dump                  >= 0.1.0.1    && < 0.2    }
-common hw-eliasfano             { build-depends: hw-eliasfano             >= 0.1.1.1    && < 0.2    }
-common hw-excess                { build-depends: hw-excess                >= 0.2.2.1    && < 0.3    }
-common hw-fingertree            { build-depends: hw-fingertree            >= 0.1.1.1    && < 0.2    }
-common hw-fingertree-strict     { build-depends: hw-fingertree-strict     >= 0.1.1.3    && < 0.2    }
-common hw-hedgehog              { build-depends: hw-hedgehog              >= 0.1.0.5    && < 0.2    }
-common hw-hspec-hedgehog        { build-depends: hw-hspec-hedgehog        >= 0.1.0.9    && < 0.2    }
-common hw-int                   { build-depends: hw-int                   >= 0.0.0.4    && < 0.1    }
-common hw-ip                    { build-depends: hw-ip                    >= 2.4.0.0    && < 2.5    }
-common hw-json                  { build-depends: hw-json                  >= 1.3.1.1    && < 1.4    }
-common hw-json-lens             { build-depends: hw-json-lens             >= 0.2.0.0    && < 0.3    }
-common hw-json-simd             { build-depends: hw-json-simd             >= 0.1.0.4    && < 0.2    }
-common hw-json-simple-cursor    { build-depends: hw-json-simple-cursor    >= 0.1.0.2    && < 0.2    }
-common hw-json-standard-cursor  { build-depends: hw-json-standard-cursor  >= 0.2.1.2    && < 0.3    }
-common hw-mquery                { build-depends: hw-mquery                >= 0.2.0.2    && < 0.3    }
-common hw-packed-vector         { build-depends: hw-packed-vector         >= 0.2.0.1    && < 0.3    }
-common hw-parser                { build-depends: hw-parser                >= 0.1.0.2    && < 0.2    }
-common hw-prim                  { build-depends: hw-prim                  >= 0.6.2.28   && < 0.7    }
-common hw-rankselect            { build-depends: hw-rankselect            >= 0.13.3.1   && < 0.14   }
-common hw-rankselect-base       { build-depends: hw-rankselect-base       >= 0.3.2.3    && < 0.4    }
-common hw-simd                  { build-depends: hw-simd                  >= 0.1.1.5    && < 0.2    }
-common hw-streams               { build-depends: hw-streams               >= 0.0.0.12   && < 0.1    }
-common hw-string-parse          { build-depends: hw-string-parse          >= 0.0.0.4    && < 0.1    }
-common hw-succinct              { build-depends: hw-succinct              >= 0.1.0.1    && < 0.2    }
-common hw-uri                   { build-depends: hw-uri                   >= 0.2.0.1    && < 0.3    }
-common hw-xml                   { build-depends: hw-xml                   >= 0.4.0.2    && < 0.5    }
+common bits-extra                 { build-depends: bits-extra                 >= 0.0.1.4    && < 0.1    }
+common hw-aeson                   { build-depends: hw-aeson                   >= 0.1.0.2    && < 0.2    }
+common hw-balancedparens          { build-depends: hw-balancedparens          >= 0.3.0.2    && < 0.4    }
+common hw-bits                    { build-depends: hw-bits                    >= 0.7.0.8    && < 0.8    }
+common hw-conduit                 { build-depends: hw-conduit                 >= 0.2.0.6    && < 0.3    }
+common hw-diagnostics             { build-depends: hw-diagnostics             >= 0.0.0.7    && < 0.1    }
+common hw-dsv                     { build-depends: hw-dsv                     >= 0.3.7      && < 0.4    }
+common hw-dump                    { build-depends: hw-dump                    >= 0.1.0.1    && < 0.2    }
+common hw-eliasfano               { build-depends: hw-eliasfano               >= 0.1.1.1    && < 0.2    }
+common hw-excess                  { build-depends: hw-excess                  >= 0.2.2.1    && < 0.3    }
+common hw-fingertree              { build-depends: hw-fingertree              >= 0.1.1.1    && < 0.2    }
+common hw-fingertree-strict       { build-depends: hw-fingertree-strict       >= 0.1.1.3    && < 0.2    }
+common hw-hedgehog                { build-depends: hw-hedgehog                >= 0.1.0.5    && < 0.2    }
+common hw-hspec-hedgehog          { build-depends: hw-hspec-hedgehog          >= 0.1.0.9    && < 0.2    }
+common hw-int                     { build-depends: hw-int                     >= 0.0.0.4    && < 0.1    }
+common hw-ip                      { build-depends: hw-ip                      >= 2.4.0.0    && < 2.5    }
+common hw-json                    { build-depends: hw-json                    >= 1.3.1.1    && < 1.4    }
+common hw-json-lens               { build-depends: hw-json-lens               >= 0.2.0.0    && < 0.3    }
+common hw-json-simd               { build-depends: hw-json-simd               >= 0.1.0.4    && < 0.2    }
+common hw-json-simple-cursor      { build-depends: hw-json-simple-cursor      >= 0.1.0.2    && < 0.2    }
+common hw-json-standard-cursor    { build-depends: hw-json-standard-cursor    >= 0.2.1.2    && < 0.3    }
+common hw-mquery                  { build-depends: hw-mquery                  >= 0.2.0.2    && < 0.3    }
+common hw-packed-vector           { build-depends: hw-packed-vector           >= 0.2.0.1    && < 0.3    }
+common hw-parser                  { build-depends: hw-parser                  >= 0.1.0.2    && < 0.2    }
+common hw-prim                    { build-depends: hw-prim                    >= 0.6.2.28   && < 0.7    }
+common hw-rankselect              { build-depends: hw-rankselect              >= 0.13.3.1   && < 0.14   }
+common hw-rankselect-base         { build-depends: hw-rankselect-base         >= 0.3.2.3    && < 0.4    }
+common hw-simd                    { build-depends: hw-simd                    >= 0.1.1.5    && < 0.2    }
+common hw-streams                 { build-depends: hw-streams                 >= 0.0.0.12   && < 0.1    }
+common hw-string-parse            { build-depends: hw-string-parse            >= 0.0.0.4    && < 0.1    }
+common hw-succinct                { build-depends: hw-succinct                >= 0.1.0.1    && < 0.2    }
+common hw-uri                     { build-depends: hw-uri                     >= 0.2.0.1    && < 0.3    }
+common hw-xml                     { build-depends: hw-xml                     >= 0.4.0.2    && < 0.5    }
 
 common config
   default-language:     Haskell2010
