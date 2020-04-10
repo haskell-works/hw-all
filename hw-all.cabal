@@ -11,7 +11,7 @@ author:                 John Ky
 maintainer:             newhoggy@gmail.com
 copyright:              2016-2020 John Ky
 category:               Data, Conduit
-tested-with:            GHC == 8.8.3, GHC == 8.6.5, GHC == 8.4.4
+tested-with:            GHC == 8.10.1, GHC == 8.8.3, GHC == 8.6.5, GHC == 8.4.4
 build-type:             Simple
 extra-source-files:     README.md
 
