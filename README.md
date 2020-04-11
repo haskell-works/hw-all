@@ -33,6 +33,7 @@
 | [hw-simd                ](https://github.com/haskell-works/hw-simd                ) | [![CircleCI](https://circleci.com/gh/haskell-works/hw-simd/tree/master.svg?style=svg                )](https://circleci.com/gh/haskell-works/hw-simd/tree/master                ) |
 | [hw-string-parse        ](https://github.com/haskell-works/hw-string-parse        ) | [![CircleCI](https://circleci.com/gh/haskell-works/hw-string-parse/tree/master.svg?style=svg        )](https://circleci.com/gh/haskell-works/hw-string-parse/tree/master        ) |
 | [hw-xml                 ](https://github.com/haskell-works/hw-xml                 ) | [![CircleCI](https://circleci.com/gh/haskell-works/hw-xml/tree/master.svg?style=svg                 )](https://circleci.com/gh/haskell-works/hw-xml/tree/master                 ) |
+| [relation               ](https://github.com/haskell-works/relation               ) | [![CircleCI](https://circleci.com/gh/haskell-works/relation/tree/master.svg?style=svg               )](https://circleci.com/gh/haskell-works/relation/tree/master               ) |
 
 ## Experimental projects
 
