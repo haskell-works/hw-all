@@ -23,7 +23,7 @@ common base                       { build-depends: base                       >=
 
 common bits-extra                 { build-depends: bits-extra                 >= 0.0.1.4    && < 0.1    }
 common hw-aeson                   { build-depends: hw-aeson                   >= 0.1.0.2    && < 0.2    }
-common hw-balancedparens          { build-depends: hw-balancedparens          >= 0.3.0.2    && < 0.4    }
+common hw-balancedparens          { build-depends: hw-balancedparens          >= 0.3.0.2    && < 0.5    }
 common hw-bits                    { build-depends: hw-bits                    >= 0.7.0.8    && < 0.8    }
 common hw-conduit                 { build-depends: hw-conduit                 >= 0.2.0.6    && < 0.3    }
 common hw-diagnostics             { build-depends: hw-diagnostics             >= 0.0.0.7    && < 0.1    }
@@ -61,9 +61,6 @@ common config
 
 library
   import:               base, config
-  hs-source-dirs:       src
-  exposed-modules:      HaskellWorks
-  build-depends:        base                          >= 4          && < 5
                       , bits-extra
                       , hw-aeson
                       , hw-balancedparens
@@ -97,3 +94,5 @@ library
                       , hw-succinct
                       , hw-uri
                       , hw-xml
+  hs-source-dirs:       src
+  exposed-modules:      HaskellWorks
