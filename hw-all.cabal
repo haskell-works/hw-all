@@ -23,7 +23,7 @@ common base                       { build-depends: base                       >=
 
 common bits-extra                 { build-depends: bits-extra                 >= 0.0.1.4    && < 0.1    }
 common hw-aeson                   { build-depends: hw-aeson                   >= 0.1.0.2    && < 0.2    }
-common hw-balancedparens          { build-depends: hw-balancedparens          >= 0.3.0.2    && < 0.5    }
+common hw-balancedparens          { build-depends: hw-balancedparens          >= 0.4        && < 0.5    }
 common hw-bits                    { build-depends: hw-bits                    >= 0.7.0.8    && < 0.8    }
 common hw-conduit                 { build-depends: hw-conduit                 >= 0.2.0.6    && < 0.3    }
 common hw-diagnostics             { build-depends: hw-diagnostics             >= 0.0.0.7    && < 0.1    }
@@ -53,7 +53,7 @@ common hw-streams                 { build-depends: hw-streams                 >=
 common hw-string-parse            { build-depends: hw-string-parse            >= 0.0.0.4    && < 0.1    }
 common hw-succinct                { build-depends: hw-succinct                >= 0.1.0.1    && < 0.2    }
 common hw-uri                     { build-depends: hw-uri                     >= 0.2.0.1    && < 0.3    }
-common hw-xml                     { build-depends: hw-xml                     >= 0.4.0.2    && < 0.5    }
+common hw-xml                     { build-depends: hw-xml                     >= 0.5.1.0    && < 0.6    }
 
 common config
   default-language:     Haskell2010
