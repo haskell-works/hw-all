@@ -26,7 +26,6 @@ common hw-aeson                   { build-depends: hw-aeson                   >=
 common hw-balancedparens          { build-depends: hw-balancedparens          >= 0.4        && < 0.5    }
 common hw-bits                    { build-depends: hw-bits                    >= 0.7.0.8    && < 0.8    }
 common hw-conduit                 { build-depends: hw-conduit                 >= 0.2.0.6    && < 0.3    }
-common hw-diagnostics             { build-depends: hw-diagnostics             >= 0.0.0.7    && < 0.1    }
 common hw-dsv                     { build-depends: hw-dsv                     >= 0.4        && < 0.5    }
 common hw-dump                    { build-depends: hw-dump                    >= 0.1.0.1    && < 0.2    }
 common hw-eliasfano               { build-depends: hw-eliasfano               >= 0.1.1.1    && < 0.2    }
@@ -65,7 +64,6 @@ library
                       , hw-balancedparens
                       , hw-bits
                       , hw-conduit
-                      , hw-diagnostics
                       , hw-dsv
                       , hw-dump
                       , hw-eliasfano
